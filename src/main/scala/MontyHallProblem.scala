@@ -52,7 +52,7 @@ object MontyHallProblem {
 
   def main(args: Array[String]): Unit = {
     def printTrialResults(simulationResult: SimulationResult): Unit =
-      println(s"num trials: ${simulationResult._1}, cars: ${simulationResult._2}, dogs: ${simulationResult._3}, % cars: ${simulationResult._2.toDouble / simulationResult._1.toDouble}")
+      println(s"num trials: ${simulationResult._1}, cars: ${simulationResult._2}, goats: ${simulationResult._3}, % cars: ${simulationResult._2.toDouble / simulationResult._1.toDouble}")
     val trials = 100000
     println("always switch")
     printTrialResults(simulate(trials)((_, _) => Switch()))
